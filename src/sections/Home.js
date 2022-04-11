@@ -84,7 +84,7 @@ const Home = () => {
               href={item.url}
               key={k}
               aria-label={item.title}
-              rel="noreferer"
+              rel="noreferrer"
               className="h-6 w-6 flex justify-center items-center dark:bg-body hover:bg-primary dark:hover:bg-primary rounded text-primary hover:text-white"
               target="_blank"
             >
@@ -93,8 +93,7 @@ const Home = () => {
           ))}
         </div>
         {/* scroll down section */}
-        <a
-          rel="noreferer"
+        <span
           className="absolute bottom-16 right-0 md:-right-4 grid gap-y-9 justify-items-center cursor-pointer text-primary hover:text-black dark:hover:text-white"
           onClick={() => {
             scrollTo("about");
@@ -103,7 +102,7 @@ const Home = () => {
         >
           <BiMouse className="text-xl mb-2" />
           <span className="rotate-90">Scroll Down</span>
-        </a>
+        </span>
       </div>
     </section>
   );

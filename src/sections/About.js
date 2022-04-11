@@ -41,13 +41,13 @@ const About = () => {
             projects carried out.
           </p>
           <div className="flex justify-center md:justify-start items-center mb-4">
-            <a
+            <span
               rel="noreferer"
               className="border-2 border-primary bg-primary text-body py-3 px-4 rounded-lg font-medium transition cursor-pointer hover:bg-secondary"
               onClick={scrollTo}
             >
               Contact Me
-            </a>
+            </span>
           </div>
         </div>
       </div>

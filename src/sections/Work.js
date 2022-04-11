@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { project } from "../data/setting";
 
@@ -31,7 +31,7 @@ const Work = () => {
       <div className="flex items-center justify-center gap-x-3 mb-8">
         <span
           className={`cursor-pointer text-body dark:text-[#f0f2f4] pt-1 px-3 font-medium rounded-lg ${
-            activeTab == "All" ? " bg-primary " : ""
+            activeTab === "All" ? " bg-primary " : ""
           }`}
           onClick={() => {
             handleTab("All");
@@ -43,7 +43,7 @@ const Work = () => {
           catList.map((item, i) => (
             <span
               className={`cursor-pointer text-body dark:text-[#f0f2f4] pt-1 px-3 font-medium rounded-lg ${
-                activeTab == item ? " bg-primary " : ""
+                activeTab === item ? " bg-primary " : ""
               }`}
               key={i}
               onClick={() => {
@@ -69,7 +69,7 @@ const Work = () => {
               {item.title}
             </h3>
             <a
-              href="#"
+              href="/"
               className="wordk__box w-max text-[#9580ff] text-sm flex items-center gap-x-1 group"
             >
               Demo{" "}

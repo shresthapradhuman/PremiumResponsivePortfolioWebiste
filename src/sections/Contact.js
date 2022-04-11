@@ -1,5 +1,4 @@
 import React from "react";
-import { BiMailSend } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { contactInfo } from "../data/setting";
 const Contact = () => {
@@ -36,6 +35,7 @@ const Contact = () => {
                   href={item.url}
                   target="_blank"
                   className="flex justify-center items-center font-medium transition group text-primary "
+                  rel="noreferrer"
                 >
                   Write me{" "}
                   <AiOutlineArrowRight className="ml-2 transition group-hover:translate-x-1" />

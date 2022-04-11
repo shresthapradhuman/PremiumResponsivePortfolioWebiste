@@ -21,7 +21,7 @@ const Footer = () => {
         {/* footer list */}
         <ul className="flex justify-center gap-x-4 mb-4 text-base md:text-xl">
           <li className="cursor-pointer">
-            <a
+            <span
               onClick={() => {
                 scrollTo("about");
               }}
@@ -29,10 +29,10 @@ const Footer = () => {
               className="text-body"
             >
               About
-            </a>
+            </span>
           </li>
           <li className="cursor-pointer">
-            <a
+            <span
               onClick={() => {
                 scrollTo("work");
               }}
@@ -40,10 +40,10 @@ const Footer = () => {
               className="text-body"
             >
               Project
-            </a>
+            </span>
           </li>
           <li className="cursor-pointer">
-            <a
+            <span
               onClick={() => {
                 scrollTo("testimonial");
               }}
@@ -51,34 +51,34 @@ const Footer = () => {
               className="text-body"
             >
               Testimonial
-            </a>
+            </span>
           </li>
         </ul>
         {/* social links */}
         <ul className="flex justify-center gap-x-4 ">
           <a
-            href="/"
+            href="https://www.facebook.com"
             rel="noreferer"
             className="bg-body text-primary p-1 rounded text-base inline-flex"
           >
             <FaFacebook />
           </a>
           <a
-            href="/"
+            href="https://www.instagram.com"
             rel="noreferer"
             className="bg-body text-primary p-1 rounded text-base inline-flex"
           >
             <FaInstagram />
           </a>
           <a
-            href="/"
+            href="https://www.github.com"
             rel="noreferer"
             className="bg-body text-primary p-1 rounded text-base inline-flex"
           >
             <FaGithub />
           </a>
           <a
-            href="/"
+            href="https://www.youtube.com"
             rel="noreferer"
             className="bg-body text-primary p-1 rounded text-base inline-flex"
           >
